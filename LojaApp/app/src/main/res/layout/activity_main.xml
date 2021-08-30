@@ -16,7 +16,7 @@
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="25dp"
             android:scaleType="centerCrop"
             android:src="@drawable/store_icon" />
 
@@ -36,17 +36,30 @@
             android:inputType="numberPassword"
             android:padding="10sp" />
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Entrar" />
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-        <Button
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Entrar" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sair" />
+        </LinearLayout>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Sair" />
+            android:layout_gravity="right"
+            android:text="Não tem conta? Cadastre-se" />
+
     </LinearLayout>
-
 </LinearLayout>
